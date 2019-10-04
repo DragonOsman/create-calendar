@@ -16,8 +16,7 @@ function createCalendar(elem, year, month) {
 
   let dateCount = date.getDate();
   const calendarCells = calendarTable.getElementsByTagName("td");
-  calendarCells[0].textContent = "30";
-  for (let td = 6; td < numCalendarCells; ++td) {
+  for (let td = 5; td < numCalendarCells; ++td) {
     calendarCells[td].textContent = `${dateCount}`;
     ++dateCount;
   }
@@ -27,13 +26,13 @@ function createCalendar(elem, year, month) {
 
 function getDaysArray() {
   const daysArray = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+    "MO",
+    "TU",
+    "WE",
+    "TH",
+    "FR",
+    "SA",
+    "SU"
   ];
   
   return daysArray;
